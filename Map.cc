@@ -221,7 +221,9 @@ void Map::clear()
     for(set<KeyFrame*>::iterator sit=mspKeyFrames.begin(), send=mspKeyFrames.end(); sit!=send; sit++)
     {
         KeyFrame* pKF = *sit;
+        // Custom code - updated for map plotting
         pKF->UpdateMap(static_cast<Map*>(NULL));
+        //
 //        delete *sit;
     }
 

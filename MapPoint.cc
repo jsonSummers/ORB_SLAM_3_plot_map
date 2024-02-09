@@ -165,7 +165,7 @@ void MapPoint::AddObservation(KeyFrame* pKF, int idx)
         nObs++;
 }
 
-// Jason
+// Custom code - updated for map plotting
 #include <fstream>
 
 void MapPoint::AppendToCSV(const std::string& filename) {

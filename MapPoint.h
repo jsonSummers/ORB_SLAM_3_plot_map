@@ -102,7 +102,7 @@ class MapPoint
 
     }
 
-// Jason
+// Custom code - updated for map plotting
 public:
     void AppendToCSV(const std::string& filename);
 
