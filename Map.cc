@@ -77,12 +77,14 @@ void Map::AddKeyFrame(KeyFrame *pKF)
     }
 }
 
+// Jason
 void Map::AddMapPoint(MapPoint *pMP)
 {
     unique_lock<mutex> lock(mMutexMap);
     mspMapPoints.insert(pMP);
     pMP->AppendToCSV("MapPoints.csv");
 }
+//
 
 
 void Map::SetImuInitialized()
